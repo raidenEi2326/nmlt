@@ -1,0 +1,19 @@
+void demchuso(int n);
+
+void demchuso(int n)
+{
+	int demchan = 0, demle = 0;
+	
+	while (n>0)
+	{
+		if ((n % 10) % 2 == 0)
+			demchan++;
+		else
+			demle++;
+		n = n / 10;
+	}
+	cout << "\nSo chu so chan cua n la: " << demchan;
+	cout << "\nSo chu so le cua n la: " << demle;
+
+cout << "\nSo chu so chan va le cua " << n << " la ";
+demchuso(n);
